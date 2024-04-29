@@ -54,34 +54,66 @@ playKick1.addEventListener("click", () => {
 });
 
 playKick2.addEventListener("click", () => {
+    if (audioContext.state === "suspended") {
+        audioContext.resume();
+        console.log(audioContext);
+    };
     kick2.play();
 });
 
 playSnare1.addEventListener("click", () => {
+    if (audioContext.state === "suspended") {
+        audioContext.resume();
+        console.log(audioContext);
+    };
     snare1.play();
 });
 
 playSnare2.addEventListener("click", () => {
+    if (audioContext.state === "suspended") {
+        audioContext.resume();
+        console.log(audioContext);
+    };
     snare2.play();
 });
 
 playHatsClosed.addEventListener("click", () => {
+    if (audioContext.state === "suspended") {
+        audioContext.resume();
+        console.log(audioContext);
+    };
     hatClosed.play();
 });
 
 playHatsOpen.addEventListener("click", () => {
+    if (audioContext.state === "suspended") {
+        audioContext.resume();
+        console.log(audioContext);
+    };
     hatOpen.play();
 });
 
 playToms1.addEventListener("click", () => {
+    if (audioContext.state === "suspended") {
+        audioContext.resume();
+        console.log(audioContext);
+    };
     tom1.play();
 });
 
 playToms2.addEventListener("click", () => {
+    if (audioContext.state === "suspended") {
+        audioContext.resume();
+        console.log(audioContext);
+    };
     tom2.play();
 });
 
 playToms3.addEventListener("click", () => {
+    if (audioContext.state === "suspended") {
+        audioContext.resume();
+        console.log(audioContext);
+    };
     tom3.play();
 });
 
