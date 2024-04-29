@@ -3,18 +3,50 @@
     <head>
         <title>Beat Sampler PROTOTYPE</title>
         <script src="samplePlayback.js" type ="module"></script>
+
+        <!-- This script tag links to the WebMidi.js library, enabling MIDI functionality in the web browser. -->
+        <script src="https://cdn.jsdelivr.net/npm/webmidi@latest/dist/iife/webmidi.iife.js"></script>
         <!-- linking to a stylesheet -->
         <!-- <link rel="stylesheet" href="./style.css" /> -->
     </head>
     <body>
         <h1 id="mySpecialh1"> Sample Playback in the Browser</h1>
         <h2>Simple Sample Playback</h2>
-        <h3>Version: 0.1</h3>
-        <p>This prototype plays two drum samples when the buttons are clicked. 
-            Does not connect to MIDI yet and stop function needs to be improved..</p>
-        <button id="play"> KICK</button>
-        <button id="play2"> SNARE</button>
-        <button id="stop"> Stop!</button>
+        <h3>Version: 0.5</h3>
+        <p>This code plays 9 separate drum samples. 
+            Does not connect to MIDI yet, does not have gain knob.</p>
+        <div>
+          <button class="play">Play Kick1</button>
+          <button class="play2">Play Kick2</button>
+          <button class="play3">Play Snare1</button>
+          <button class="play4">Play Snare2</button>
+          <button class="play5">Play HH Closed</button>
+          <button class="play6">Play HH Open</button>
+          <button class="play7">Play Toms1</button>
+          <button class="play8">Play Toms2</button>
+          <button class="play9">Play Toms3</button>
+        </div>
 
+        <div>
+          <!-- A division or a section in an HTML document, used here to group the input device selector. -->
+          <label for="dropdown-ins">Select a MIDI Input:</label>
+          <!-- The label tag defines a label for the select element below. The 'for' attribute specifies which form element the label is bound to. -->
+          <select id="dropdown-ins">
+            <!-- The select tag represents a drop-down list. The id attribute is used to identify the element in CSS and JavaScript. -->
+            <!-- Options for the drop-down list are dynamically added through the script.js file. -->
+          </select>
+        </div>
+          
+          <div>
+            <label for="vol">Master Volume</label>
+            <input type="range" id="vol" min="-12" max="12" >/
+            <p id="volAmt">0 dB</p>
+          </div>
+        
+        <label for="chordSelect">Choose MIDI Map: </label>
+        <select id="chordSelect">
+          <option value="Aruba">Nektar Aruba</option>
+          <option value="Generic MIDI">Generic MIDI Keyboard</option>
+          <p id="mapSelection"></p>
     </body>
 </html>
