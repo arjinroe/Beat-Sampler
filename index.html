@@ -1,20 +1,85 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Beat Sampler ALPHA</title>
+        <title>The Beat Sampler by ghostweaver</title>
         <script src="samplePlayback.js" type ="module"></script>
 
         <!-- This script tag links to the WebMidi.js library, enabling MIDI functionality in the web browser. -->
         <script src="https://cdn.jsdelivr.net/npm/webmidi@latest/dist/iife/webmidi.iife.js"></script>
+        <link rel="stylesheet" href="./style.css" />
         <!-- linking to a stylesheet -->
         <!-- <link rel="stylesheet" href="./style.css" /> -->
     </head>
     <body>
-        <h1 id="mySpecialh1"> Beat Sampler BETA</h1>
-        <h2>By Arjin Roe</h2>
-        <h3>Version: 0.9</h3>
-        <p>This site plays 18 separate drum samples in two selectable banks.
-            Connects to a generic MIDI keyboard, has 2 banks of drums, now mapped for Aruba but cannot change mappings, does not have gain knob.</p>
+        <h1 id="mySpecialh1"> the beat sampler</h1>
+        <h2>by arjin roe</h2>
+        <h3>v1.0</h3>
+        <p>This site plays 36 separate drum samples in four selectable banks.
+        <p>Connect a Nektar Aruba, any MIDI keyboard, or just use the onscreen pads.
+        <hr>
+        
+        <h3>initialization</h3>
+        <!-- MIDI dropdowns -->
+        
+          <!-- A division or a section in an HTML document, used here to group the input device selector. -->
+          <label for="dropdown-ins">input:</label>
+          <!-- The label tag defines a label for the select element below. The 'for' attribute specifies which form element the label is bound to. -->
+          <select id="dropdown-ins">
+            <!-- The select tag represents a drop-down list. The id attribute is used to identify the element in CSS and JavaScript. -->
+            <!-- Options for the drop-down list are dynamically added through the script.js file. -->
+          </select>
+        
+        
+          <!-- Mapping Selection Dropdown -->
+          <label for="mapSelect">mapping: </label>
+          <select id="mapSelect">
+            <option value="Nektar Aruba">Nektar Aruba</option>
+            <option value="Generic MIDI">Generic MIDI Keyboard</option>
+            <p id="mappingSelection"></p>
+          </select>
+          <hr>
+          <h3>device controls:</h3>
+        <div>
+          <!-- Bank Selection Dropdown -->
+        <label for="bankSelect">sample bank: </label>
+          <select id="bankSelect">
+            <option value="bankA">Bank A - Electric</option>
+            <option value="bankB">Bank B - Acoustic</option>
+            <option value="bankC">Bank C - Hybrid</option>
+            <option value="bankD">Bank D - Emperor Kit</option>
+            <p id="bankSelection"></p>
+          </select>
+          </div>
+          <!-- Master Volume Slider -->
+          <div>
+            <label for="gainSlider">master volume</label>
+                <input id="gainSlider" type="range" min="-70" max="12" value="-70">
+            <label for="gainSlider" id="gainDisplay">-70 dBFS</label>
+               </div>
+               <hr>
+        <!-- these are the onscreen buttons -->
+        <h3>no controller? no problem!</h3>
+        <div>
+          <div>
+          <button class="play7"id="button4">Tom 1</button>
+          <button class="play8"id="button4">Tom 2</button>
+          <button class="play9"id="button4">Tom 3</button>
+        </div>
+
+        <div>
+          <button class="play4"id="button2">Snare 2</button>
+          <button class="play5"id="button3">HiHat Closed</button>
+          <button class="play6"id="button3">HiHat Open</button>
+        </div>
+          
+          <div>
+          <button class="play"id="button1">Kick 1</button>
+          <button class="play2"id="button1">Kick 2</button>
+          <button class="play3"id="button2">Snare 1</button>
+        </div>
+
+        </div>
+        <hr>
         <h3>Mapping for Keyboard:</h3>
         <p> Kick 1 - C4 (60) </p>
         <p> Kick 2 - D4 (62) </p>
@@ -25,41 +90,17 @@
         <p> Tom 1 - B4 (71) </p>
         <p> Tom 2 - C5 (72) </p>
         <p> Tom 3 - D5 (74) </p>
-        <h3>Currently Mapped for Aruba:</h3>
         
-        <div>
-          <button class="play">Play Kick1</button>
-          <button class="play2">Play Kick2</button>
-          <button class="play3">Play Snare1</button>
-          <button class="play4">Play Snare2</button>
-          <button class="play5">Play HH Closed</button>
-          <button class="play6">Play HH Open</button>
-          <button class="play7">Play Toms1</button>
-          <button class="play8">Play Toms2</button>
-          <button class="play9">Play Toms3</button>
-        </div>
+        
 
-        <div>
-          <!-- A division or a section in an HTML document, used here to group the input device selector. -->
-          <label for="dropdown-ins">Select a MIDI Input:</label>
-          <!-- The label tag defines a label for the select element below. The 'for' attribute specifies which form element the label is bound to. -->
-          <select id="dropdown-ins">
-            <!-- The select tag represents a drop-down list. The id attribute is used to identify the element in CSS and JavaScript. -->
-            <!-- Options for the drop-down list are dynamically added through the script.js file. -->
-          </select>
-        </div>
-          
-          <!-- <div>
-            <label for="vol">Master Volume</label>
-            <input type="range" id="vol" min="-12" max="12" >/
-            <p id="volAmt">0 dB</p>
-          </div> -->
         
-        <label for="bankSelect">Choose Bank: </label>
-        <select id="bankSelect">
-          <option value="bankA">Bank A - Electric</option>
-          <option value="bankB">Bank B - Acoustic</option>
-          <p id="bankSelection"></p>
+
+        
+
+        
+
+        
+          
       
     </body>
 </html>
