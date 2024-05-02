@@ -10,12 +10,12 @@
         <!-- <link rel="stylesheet" href="./style.css" /> -->
     </head>
     <body>
-        <h1 id="mySpecialh1"> Beat Sampler ALPHA</h1>
+        <h1 id="mySpecialh1"> Beat Sampler BETA</h1>
         <h2>By Arjin Roe</h2>
-        <h3>Version: 0.7</h3>
-        <p>This code plays 9 separate drum samples. 
-            Connects to a generic MIDI keyboard, no mapping for Aruba yet, does not have gain knob.</p>
-        <h3>Mapping:</h3>
+        <h3>Version: 0.9</h3>
+        <p>This site plays 18 separate drum samples in two selectable banks.
+            Connects to a generic MIDI keyboard, has 2 banks of drums, now mapped for Aruba but cannot change mappings, does not have gain knob.</p>
+        <h3>Mapping for Keyboard:</h3>
         <p> Kick 1 - C4 (60) </p>
         <p> Kick 2 - D4 (62) </p>
         <p> Snare 1 - E4 (64) </p>
@@ -25,6 +25,7 @@
         <p> Tom 1 - B4 (71) </p>
         <p> Tom 2 - C5 (72) </p>
         <p> Tom 3 - D5 (74) </p>
+        <h3>Currently Mapped for Aruba:</h3>
         
         <div>
           <button class="play">Play Kick1</button>
@@ -48,16 +49,17 @@
           </select>
         </div>
           
-          <div>
+          <!-- <div>
             <label for="vol">Master Volume</label>
             <input type="range" id="vol" min="-12" max="12" >/
             <p id="volAmt">0 dB</p>
-          </div>
+          </div> -->
         
-        <label for="chordSelect">Choose MIDI Map: </label>
-        <select id="chordSelect">
-          <option value="Aruba">Nektar Aruba</option>
-          <option value="Generic MIDI">Generic MIDI Keyboard</option>
-          <p id="mapSelection"></p>
+        <label for="bankSelect">Choose Bank: </label>
+        <select id="bankSelect">
+          <option value="bankA">Bank A - Electric</option>
+          <option value="bankB">Bank B - Acoustic</option>
+          <p id="bankSelection"></p>
+      
     </body>
 </html>
