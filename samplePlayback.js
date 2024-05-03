@@ -228,7 +228,8 @@ const playToms2 = document.querySelector(".play8");
 const playToms3 = document.querySelector(".play9");
 
 //create audio context
-const audioContext = new AudioContext();
+// const audioContext = new AudioContext();
+const audioContext = new (AudioContext || webkit.AudioContext)();
 
 const gainControl = document.getElementById("gainSlider");
 
