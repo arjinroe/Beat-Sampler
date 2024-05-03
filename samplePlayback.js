@@ -239,48 +239,48 @@ gainNode.gain.value = 0. //linear amplitude
 //link to audio files with a being BANK A and b being BANK B
 
 // BANK A
-let aKick1 = new Audio ("./assets/kick.wav");
-let aKick2 = new Audio ("./assets/kick2.wav");
-let aSnare1 = new Audio ("./assets/snare.wav");
-let aSnare2 = new Audio ("./assets/snare2.wav");
-let aHatClosed = new Audio ("./assets/hh-closed.wav");
-let aHatOpen = new Audio ("./assets/hh-open.wav");
-let aTom1 = new Audio ("./assets/tom1.wav");
-let aTom2 = new Audio ("./assets/tom2.wav");
-let aTom3 = new Audio ("./assets/tom3.wav");
+let aKick1 = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/Kick.wav');
+let aKick2 = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/Kick2.wav');
+let aSnare1 = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/Snare.wav');
+let aSnare2 = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/Snare2.wav');
+let aHatClosed = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/HH-Closed.wav');
+let aHatOpen = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/HH-Open.wav');
+let aTom1 = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/Tom1.wav');
+let aTom2 = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/Tom2.wav');
+let aTom3 = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/Tom3.wav');
 
 // BANK B
-let bKick1 = new Audio ("./assets/b-kick.wav");
-let bKick2 = new Audio ("./assets/b-kick2.wav");
-let bSnare1 = new Audio ("./assets/b-snare1.wav");
-let bSnare2 = new Audio ("./assets/b-snare2.wav");
-let bHatClosed = new Audio ("./assets/b-hh-closed.wav");
-let bHatOpen = new Audio ("./assets/b-hh-open.wav");
-let bTom1 = new Audio ("./assets/b-tom1.wav");
-let bTom2 = new Audio ("./assets/b-tom2.wav");
-let bTom3 = new Audio ("./assets/b-tom3.wav");
+let bKick1 = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/B-Kick.wav');
+let bKick2 = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/B-Kick2.wav');
+let bSnare1 = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/B-Snare1.wav');
+let bSnare2 = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/B-Snare2.wav');
+let bHatClosed = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/B-HH-Closed.wav');
+let bHatOpen = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/B-HH-Open.wav');
+let bTom1 = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/B-Tom1.wav');
+let bTom2 = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/B-Tom2.wav');
+let bTom3 = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/B-Tom3.wav');
 
 // BANK C
-let cKick1 = new Audio ("./assets/c-kick1.wav");
-let cKick2 = new Audio ("./assets/c-kick2.wav");
-let cSnare1 = new Audio ("./assets/c-snare1.wav");
-let cSnare2 = new Audio ("./assets/c-snare2.wav");
-let cHatClosed = new Audio ("./assets/c-hh-closed.wav");
-let cHatOpen = new Audio ("./assets/c-hh-open.wav");
-let cTom1 = new Audio ("./assets/c-tom1.wav");
-let cTom2 = new Audio ("./assets/c-tom2.wav");
-let cTom3 = new Audio ("./assets/c-tom3.wav");
+let cKick1 = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/C-Kick.wav');
+let cKick2 = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/C-Kick2.wav');
+let cSnare1 = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/C-Snare1.wav');
+let cSnare2 = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/C-Snare2.wav');
+let cHatClosed = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/C-HH-Closed.wav');
+let cHatOpen = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/C-HH-Open.wav');
+let cTom1 = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/C-Tom1.wav');
+let cTom2 = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/C-Tom2.wav');
+let cTom3 = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/C-Tom3.wav');
 
 // BANK D
-let dKick1 = new Audio ("./assets/d-kick1.wav");
-let dKick2 = new Audio ("./assets/d-kick2.wav");
-let dSnare1 = new Audio ("./assets/d-snare1.wav");
-let dSnare2 = new Audio ("./assets/d-snare2.wav");
-let dHatClosed = new Audio ("./assets/d-hh-closed.wav");
-let dHatOpen = new Audio ("./assets/d-hh-open.wav");
-let dTom1 = new Audio ("./assets/d-tom1.wav");
-let dTom2 = new Audio ("./assets/d-tom2.wav");
-let dTom3 = new Audio ("./assets/d-tom3.wav");
+let dKick1 = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/D-Kick.wav');
+let dKick2 = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/D-Kick2.wav');
+let dSnare1 = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/D-Snare1.wav');
+let dSnare2 = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/D-Snare2.wav');
+let dHatClosed = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/D-HH-Closed.wav');
+let dHatOpen = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/D-HH-Open.wav');
+let dTom1 = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/D-Tom1.wav');
+let dTom2 = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/D-Tom2.wav');
+let dTom3 = new Audio ('https://github.com/arjinroe/Beat-Sampler/blob/main/assets/D-Tom3.wav');
 
 
 // creating SOURCE MEDIA from SAMPLES
@@ -542,5 +542,3 @@ playToms3.addEventListener("click", () => {
 
 
 gainControl.addEventListener("input", updateGain)
-
-
