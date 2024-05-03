@@ -240,47 +240,47 @@ gainNode.gain.value = 0. //linear amplitude
 
 // BANK A
 let aKick1 = new Audio (".audio/kick.wav");
-let aKick2 = new Audio ("./kick2.wav");
-let aSnare1 = new Audio ("./snare.wav");
-let aSnare2 = new Audio ("./snare2.wav");
-let aHatClosed = new Audio ("./hh-closed.wav");
-let aHatOpen = new Audio ("./hh-open.wav");
-let aTom1 = new Audio ("./tom1.wav");
-let aTom2 = new Audio ("./tom2.wav");
-let aTom3 = new Audio ("./tom3.wav");
+let aKick2 = new Audio (".audio/kick2.wav");
+let aSnare1 = new Audio (".audio/snare.wav");
+let aSnare2 = new Audio (".audio/snare2.wav");
+let aHatClosed = new Audio (".audio/hh-closed.wav");
+let aHatOpen = new Audio (".audio/hh-open.wav");
+let aTom1 = new Audio (".audio/tom1.wav");
+let aTom2 = new Audio (".audio/tom2.wav");
+let aTom3 = new Audio (".audio/tom3.wav");
 
 // BANK B
-let bKick1 = new Audio ("./b-kick.wav");
-let bKick2 = new Audio ("./b-kick2.wav");
-let bSnare1 = new Audio ("./b-snare1.wav");
-let bSnare2 = new Audio ("./b-snare2.wav");
-let bHatClosed = new Audio ("./b-hh-closed.wav");
-let bHatOpen = new Audio ("./b-hh-open.wav");
-let bTom1 = new Audio ("./b-tom1.wav");
-let bTom2 = new Audio ("./b-tom2.wav");
-let bTom3 = new Audio ("./b-tom3.wav");
+let bKick1 = new Audio (".audio/b-kick.wav");
+let bKick2 = new Audio (".audio/b-kick2.wav");
+let bSnare1 = new Audio (".audio/b-snare1.wav");
+let bSnare2 = new Audio (".audio/b-snare2.wav");
+let bHatClosed = new Audio (".audio/b-hh-closed.wav");
+let bHatOpen = new Audio (".audio/b-hh-open.wav");
+let bTom1 = new Audio (".audio/b-tom1.wav");
+let bTom2 = new Audio (".audio/b-tom2.wav");
+let bTom3 = new Audio (".audio/b-tom3.wav");
 
 // BANK C
-let cKick1 = new Audio ("./c-kick1.wav");
-let cKick2 = new Audio ("./c-kick2.wav");
-let cSnare1 = new Audio ("./c-snare1.wav");
-let cSnare2 = new Audio ("./c-snare2.wav");
-let cHatClosed = new Audio ("./c-hh-closed.wav");
-let cHatOpen = new Audio ("./c-hh-open.wav");
-let cTom1 = new Audio ("./c-tom1.wav");
-let cTom2 = new Audio ("./c-tom2.wav");
-let cTom3 = new Audio ("./c-tom3.wav");
+let cKick1 = new Audio (".audio/c-kick1.wav");
+let cKick2 = new Audio (".audio/c-kick2.wav");
+let cSnare1 = new Audio (".audio/c-snare1.wav");
+let cSnare2 = new Audio (".audio/c-snare2.wav");
+let cHatClosed = new Audio (".audio/c-hh-closed.wav");
+let cHatOpen = new Audio (".audio/c-hh-open.wav");
+let cTom1 = new Audio (".audio/c-tom1.wav");
+let cTom2 = new Audio (".audio/c-tom2.wav");
+let cTom3 = new Audio (".audio/c-tom3.wav");
 
 // BANK D
-let dKick1 = new Audio ("./d-kick1.wav");
-let dKick2 = new Audio ("./d-kick2.wav");
-let dSnare1 = new Audio ("./d-snare1.wav");
-let dSnare2 = new Audio ("./d-snare2.wav");
-let dHatClosed = new Audio ("./d-hh-closed.wav");
-let dHatOpen = new Audio ("./d-hh-open.wav");
-let dTom1 = new Audio ("./d-tom1.wav");
-let dTom2 = new Audio ("./d-tom2.wav");
-let dTom3 = new Audio ("./d-tom3.wav");
+let dKick1 = new Audio (".audio/d-kick1.wav");
+let dKick2 = new Audio (".audio/d-kick2.wav");
+let dSnare1 = new Audio (".audio/d-snare1.wav");
+let dSnare2 = new Audio (".audio/d-snare2.wav");
+let dHatClosed = new Audio (".audio/d-hh-closed.wav");
+let dHatOpen = new Audio (".audio/d-hh-open.wav");
+let dTom1 = new Audio (".audio/d-tom1.wav");
+let dTom2 = new Audio (".audio/d-tom2.wav");
+let dTom3 = new Audio (".audio/d-tom3.wav");
 
 
 // creating SOURCE MEDIA from SAMPLES
