@@ -239,7 +239,7 @@ gainNode.gain.value = 0. //linear amplitude
 //link to audio files with a being BANK A and b being BANK B
 
 // BANK A
-let aKick1 = new Audio ("./kick.wav");
+let aKick1 = new Audio (".audio/kick.wav");
 let aKick2 = new Audio ("./kick2.wav");
 let aSnare1 = new Audio ("./snare.wav");
 let aSnare2 = new Audio ("./snare2.wav");
